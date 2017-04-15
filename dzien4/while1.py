@@ -1,12 +1,15 @@
 # pętla while
 
+# ta pętla będzie działać w nieskończoność, bo nie aktualizujemy
+# warunku sprawdzanego przez while - jest on zawsze prawdziwy
 # while True:
 #     print(100)
 
-# stan = True
-# while stan:
-#     print(100)
-#     stan = False
+# musimy sami zapewnić zmianę warunku while
+stan = True
+while stan:
+    print(100)
+    stan = False
 
 liczba = 1
 
