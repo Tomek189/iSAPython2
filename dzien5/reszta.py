@@ -7,7 +7,7 @@ zakup = 11
 reszta = banknot - zakup
 print("Do wydania:", reszta)
 
-for indeks, moneta in enumerate(monety):
+for (indeks, moneta) in enumerate(monety):
     if reszta >= moneta:
         ilosc = reszta // moneta
         wartosc = ilosc * moneta
