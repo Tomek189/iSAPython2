@@ -8,7 +8,7 @@ with open("osoby.txt") as plik:
     for line in plik:
         # usuwamy whitespace
         line = line.strip()
-
+        # tworzymy listę elementów z jednej linii
         osoba = line.split(",")
         # print(osoba)
         baza.append(osoba)

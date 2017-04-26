@@ -8,5 +8,7 @@ with open("imiona.txt", "w") as plik:
     # AlaOlaJola
     # plik.writelines(lista)
 
+    # w ten sposób każdy element będzie zapisany
+    # w oddzielnej linijce
     for element in lista:
         plik.write(element + "\n")

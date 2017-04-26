@@ -1,3 +1,5 @@
-# import antigravity
+# dwa eastereggi
+
+import antigravity
 
 import this
