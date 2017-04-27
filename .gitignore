@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+dzien8/secrets.py
+
 # PyCharm specific
 .idea/*
 
