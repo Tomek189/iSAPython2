@@ -1,6 +1,8 @@
 class Ogloszenie(object):
     """Definiuje ogłoszenie w portalu otodom"""
 
+    # blok z przeciążonymi metodami specjalnymi Pythona
+    # metody te pierwotnie są zdefiniowane w klasie object
     def __init__(self, cena, metraz=None, miejscowosc=None, tel=None, id = None):
         self.cena = cena
         self.metraz = metraz
@@ -9,6 +11,24 @@ class Ogloszenie(object):
         self.zdjecia = None
         self.id = None
 
+    def __str__(self):
+        """Własna implementacja. Metoda ta jet wykonana w momencie
+            gdy będziemy robić print() na instancji"""
+        return "Miejscowość {} - cena: {}".format(self.miejscowosc, self.cena)
+
+    def __add__(self, other):
+        """Własne zachowanie obiektu z operatorem dodawania +"""
+        return self.cena + other.cena
+
+
+    def __del__(self):
+        """Destruktor obiektu.
+        Metoda del może być wywołana ręcznie przez nas
+        Jest też wywoływana przez Pythona automatycznie"""
+        print("Ogłoszenie {} {} usunięte".
+              format(self.miejscowosc, self.cena))
+
+    # blok z naszymi włąsnymi metodami klasy
     def dodaj_zdjecie(self, foto):
         if self.zdjecia == None:
             self.zdjecia = []
