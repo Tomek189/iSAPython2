@@ -24,8 +24,12 @@ class Pracownik(object):
     def __str__(self):
         return "{} - {} ma wynagrodzenie: {}".format(self.imie, self.stanowisko, self.wynagrodzenie)
 
+
+    # to jest metoda klasy - ma dekorator @classmethod
+    # oraz jako pierwszy argument przyjmuje klasę (cls)
     @classmethod
     def ustaw_roczna_podw(cls, ilosc_p_proc):
+        """Zmienia wartość rocznej podwyżki"""
         cls.roczna_podw = ilosc_p_proc
 
 
