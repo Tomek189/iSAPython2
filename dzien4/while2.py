@@ -1,7 +1,6 @@
-#
+# indeksowanie string za pomocą while
 
 imie = "Joanna"
-
 indeks = 0
 
 while indeks < len(imie):

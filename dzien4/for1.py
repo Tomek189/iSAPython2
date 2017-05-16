@@ -1,21 +1,23 @@
 # petla for
 
-# range
-# x = range(100)
-# print(x)
-#
-# for liczba in range(100):
-#     print(liczba * liczba)
+# range zwraca zakres (zbiór liczb całkowitych)
+x = range(100)
+print(x)
+
+for liczba in range(100):
+    print(liczba * liczba)
 
 
-# for litera in "Aleksandra"[::-1]:
-#     print(litera)
+for litera in "Aleksandra"[::-1]:
+    print(litera)
 
 for litera in "Aleksandra":
     print(litera.capitalize())
 
-# for litera in "Aleksandra":
-#     print("Nie korzystam z litery!")
+# zmienną lokalną pętli nie musze wykorzystywać w kodzie pętli
+# w tym wypadku spełniać ona będzie wyłącznie funkcje licznika pętli
+for litera in "Aleksandra":
+    print("Nie korzystam ze zmiennej litera!")
 
 imie = "Hermenegilda"
 # indeks = 0

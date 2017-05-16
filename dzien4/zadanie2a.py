@@ -1,3 +1,4 @@
+#importujemy moduł standardowy z dostępnych bibliotek
 import string
 
 # print(type("dfdsdf"))
@@ -13,6 +14,7 @@ for znak in zdanie:
         cyfry += 1
     elif znak.isalpha():
         litery += 1
+        # aby użyć element modułu podajemy jego nazwę kropkę i element
         if znak in string.ascii_lowercase:
             male_litery += 1
         else:
